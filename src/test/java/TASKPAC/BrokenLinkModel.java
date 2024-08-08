@@ -30,7 +30,7 @@ public class BrokenLinkModel {
 				System.out.println("The Link Invalid !");
 			}else if (!href.startsWith("https://www.ajio.com/"))
 			{
-				System.out.println("The Link not related to Website:"+ href);
+				System.out.println("The Link not related to Website"+ href);
 				}
 			else {
 				try {
@@ -39,9 +39,9 @@ public class BrokenLinkModel {
 				httpconnect.connect();
 				int rescode = httpconnect.getResponseCode();
 				if(rescode==200) {
-					System.out.println("Not a Broken Link:"+ href);
+					System.out.println("Not a Broken Link"+ href);
 				}else {
-					System.out.println("The link is Broken Link:"+ href);
+					System.out.println("The link is Broken Link"+ href);
 				}
 				}
 				catch(Exception e) {
